@@ -90,3 +90,6 @@ ul.logs {
 .fundamentals-form .ng-invalid.ng-touched:not(form)  {
     border: 1px solid #a94442; /* red */
 }
+.card-body li{
+    list-style-type: none;
+}
