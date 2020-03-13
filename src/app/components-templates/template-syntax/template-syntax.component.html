@@ -1,0 +1,87 @@
+<h6><b>Interpolation Binding</b></h6><br>
+<p>My current hero is {{currentHero.name}}</p>
+
+<img src="{{heroImgUrl}}" style="height:50px;">
+<img src="./assets/images/hero.jpg" style="height:50px;">
+
+<p>The Sum of 2 + 7 is {{2+7}}</p>
+<p>The sum of  1 +1 is not equal to {{1 + 1 + getVal()}}</p>
+
+<script>
+    alert('Hello');
+</script>
+
+<hr>
+
+<h6><b>Property Binding</b></h6><br>
+
+<img [src]="heroImgUrl" style="height:50px">
+<img bind-src="heroImgUrl" style="height:50px"><br/>
+
+<button [disabled]="formNotChanged">Cancel</button>
+<br/><br/>
+
+<app-hero-details [task]="currentHero"></app-hero-details>
+<app-hero-details task="{{currentHero}}"></app-hero-details>
+<br/>
+
+<button (click)="updateHero()">Update Here</button>
+
+<br/><br/>
+<div ngClass [ngClass]="classConditions">[ngClass] class condition is adding here</div>
+<br/><br/>
+
+<h6>Usign function call in bindings:</h6>
+<img src="{{getHeroImg()}}" style="height:50px;">
+<img [src]="getHeroImg()" style="height:50px">
+<img bind-src="getHeroImg()" style="height:50px">
+
+<br/><br/>
+<app-hero-details task="currentHero"></app-hero-details>
+
+<br/><br/>
+<h6>Script tags in property bindings:</h6>
+<p><span>"{{jesussave}}"</span> and the entire the world <i>---interpolation bind</i>data </p>
+<p>"<span [innerHTML]="jesussave"></span>"and the entire the world <i>---property bind</i>data </p>
+
+
+<br/><br/>
+<h6>Attribute, class, and style bindings</h6><br/>
+
+<h6>Attribute binding</h6>
+<input type="text" value="Raju" placeholder="Name">
+<br><br>
+
+<table class="table table-bordered text-center">
+  <tr>
+    <td id="tdId" colspan="2">One</td>
+  </tr>
+  <tr>
+    <td>Three-Four</td>
+    <td>Three-Four</td>
+  </tr>
+</table>
+<br><br>
+
+<div>Un-comment below binding to get error</div>
+<table class="table table-bordered text-center">
+  <tr>
+    <!-- <td colspan="{{ noOfColumns }}">One</td> -->
+  </tr>
+  <tr>
+    <td>Three-Four</td>
+    <td>Three-Four</td>
+  </tr>
+</table>
+
+<div>Attribute binding</div>
+<table class="table table-bordered text-center">
+  <tr>
+    <td [attr.colspan]="noOfColumns">One</td>
+  </tr>
+  <tr>
+    <td>Three-Four</td>
+    <td>Three-Four</td>
+  </tr>
+</table>
+<br>
