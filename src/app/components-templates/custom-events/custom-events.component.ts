@@ -7,19 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomEventsComponent implements OnInit {
 
-  heros = [{"id":1,"name":"John","power":2612},
-  {"id":2,"name":"Vernice","power":7036},
-  {"id":3,"name":"Chrissie","power":3331},
-  {"id":4,"name":"Tana","power":5158},
-  {"id":5,"name":"Rawley","power":8948}];
+  // heros = [{"id":1,"name":"John","power":2612},
+  // {"id":2,"name":"Vernice","power":7036},
+  // {"id":3,"name":"Chrissie","power":3331},
+  // {"id":4,"name":"Tana","power":5158},
+  // {"id":5,"name":"Rawley","power":8948}];
   
   constructor() { }
 
   ngOnInit() {
   }
 
-  delete(heroObj) {
-    console.log(heroObj);
-  }
+  // delete(heroObj) {
+  //   console.log(heroObj);
+  // }
 
 }
