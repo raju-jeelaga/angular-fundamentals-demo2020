@@ -31,7 +31,17 @@ noOfColumns = 2
 
 jesussave = "Jesus save me <script>('from evil')</script>";
 
+classNames = "property-class working";
+badCurly = 'different bad curly';
 
+special = true;
+
+currentStyles = {
+   'font-size' : this.saveable ? '25px' : '33px',
+   'font-weight': this.modified ? '600' : '300',
+   'font-style': this.isspecial ? 'normal': 'italic',
+   'background': this.saveable ? 'cyan' : 'red',
+}
 
   constructor() { }
 
@@ -44,6 +54,11 @@ jesussave = "Jesus save me <script>('from evil')</script>";
    getHeroImg(){
      return this.heroImgUrl
    }
+
+   onSave(event){
+     console.log(event);
+   }
+
 
 updateHero(){
   this.currentHero = {

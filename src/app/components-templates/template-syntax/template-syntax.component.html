@@ -85,3 +85,45 @@
   </tr>
 </table>
 <br>
+
+<h6>Class bindings</h6>
+<div>I. Reset/override all class names with class property binding</div>
+<div class="hello my-class" [class]="classNames">Property class working</div>
+<div class="bad curly special" [class]="badCurly">Bad curly</div>
+<br/>
+
+<div>II. Toggle a single class</div>
+<div [class.special]="special">This is special class</div>
+<div [class.notspecial]="!special">This is not a special Class</div>
+<div [class.very]="special" [class.special]="special">This is a very special class</div>
+<div class="not" [class.very]="special" [class.special]="special">This is not very special Class</div>
+<br/>
+
+<div>III. Toggle Multiple classes(ngClass directive)</div>
+
+<div [ngClass]="classConditions">Multiple class bindings</div>
+<div class="another-class" [ngClass]="classConditions">Multiple class bindings dont override other existing classes</div>
+<br/><br/>
+<h6>Syle bindings</h6>
+<button [style.color]="saveable ? 'red': 'yello'">Save</button>
+<br/><br/>
+<button [style.background]="modified ? 'blue': 'green'">save</button>
+<br/> <br/>
+<button [style.color]="isspecial ? 'red' : 'yellow'" [style.background]="isspecial ? 'green' : 'red'">Save</button>
+<br/> <br/>
+<button [style.font-size.px]="saveable ? '22' : '11' ">Font Size</button>
+<br/><br/>
+<button [style.fontSize.px]="modified ? '11' : '18'">Camel case font size</button>
+<br/><br/>
+<button [ngStyle]="currentStyles">Div styles are applied</button>
+<br/><br/>
+
+<h6><b>Event Binding</b></h6>
+<button (click)="onSave($event)">Click Here</button><br><br>
+<button on-click="onSave($event)">Save</button><br/><br/>
+<input type="text" (keypress)="onSave($event)"/>
+
+<br>
+<hr>
+<h6><b>Template Expression Operators</b></h6>
+<br>
