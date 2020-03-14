@@ -12,12 +12,13 @@ export class DisplayHeroComponent implements OnInit {
   ngOnInit() {
   }
 
-  //@Input() hero;
+  @Input() serve;
 
-  @Output() deleteHeroEvent = new EventEmitter();
+  @Output() deleteServeEvent = new EventEmitter();
 
-  // deleteHero(hero) {
-  //   this.deleteHeroEvent.emit(hero);
-  // }
+
+  deleteServe(serve) {
+    this.deleteServeEvent.emit(serve);
+  }
 
 }

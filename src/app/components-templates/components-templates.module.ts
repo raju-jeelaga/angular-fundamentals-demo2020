@@ -6,11 +6,12 @@ import { TemplateSyntaxComponent } from './template-syntax/template-syntax.compo
 import { HeroDetailsComponent } from './hero-details/hero-details.component';
 import { CustomEventsComponent } from './custom-events/custom-events.component';
 import { DisplayHeroComponent } from './display-hero/display-hero.component';
+import { HeroBioComponent } from './hero-bio/hero-bio.component';
 
 
 
 @NgModule({
-  declarations: [DisplayDataInTemplateComponent, DisplayDataInTemplateUrlComponent, TemplateSyntaxComponent, HeroDetailsComponent, CustomEventsComponent, DisplayHeroComponent],
+  declarations: [DisplayDataInTemplateComponent, DisplayDataInTemplateUrlComponent, TemplateSyntaxComponent, HeroDetailsComponent, CustomEventsComponent, DisplayHeroComponent, HeroBioComponent],
   imports: [
     CommonModule
   ]

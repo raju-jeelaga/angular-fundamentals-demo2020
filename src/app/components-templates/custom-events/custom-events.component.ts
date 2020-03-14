@@ -7,19 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomEventsComponent implements OnInit {
 
-  // heros = [{"id":1,"name":"John","power":2612},
-  // {"id":2,"name":"Vernice","power":7036},
-  // {"id":3,"name":"Chrissie","power":3331},
-  // {"id":4,"name":"Tana","power":5158},
-  // {"id":5,"name":"Rawley","power":8948}];
+
+  serves =[
+    {"id":1,"name":"Raju","power":9600},
+    {"id":2,"name":"Jeelaga","power":6600},
+    {"id":3,"name":"Anil","power":68500},
+    {"id":4,"name":"Rithvik","power":65600},
+    {"id":5,"name":"Prince","power":60420},
+
+]
   
   constructor() { }
 
   ngOnInit() {
   }
 
-  // delete(heroObj) {
-  //   console.log(heroObj);
-  // }
+  delete(serveObj) {
+    console.log(serveObj);
+  }
 
 }

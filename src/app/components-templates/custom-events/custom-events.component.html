@@ -1,1 +1,17 @@
 <h6><b>Custom Events</b></h6>
+<hr>
+<ul>
+  <!-- <li *ngFor="let hero of heros">
+    <app-display-hero (deleteHeroEvent)="delete($event)" [hero]="hero"></app-display-hero>
+  </li> -->
+  <li *ngFor="let serve of serves">
+    <app-display-hero (deleteServeEvent)="delete($event)" [serve]="serve"></app-display-hero>
+  </li>
+</ul>
+
+<ul>
+    <h6><b>Custom Events with Aliasing</b></h6>
+    <li *ngFor="let serve of serves">
+      <app-display-hero (deleteServeEvent)="delete($event)" [serve]="serve"></app-display-hero>
+    </li>
+  </ul>
