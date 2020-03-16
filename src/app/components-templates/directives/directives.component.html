@@ -21,3 +21,13 @@
 
 <br>
 <hr>
+
+<h6><b>Structural Directives</b></h6>
+
+<br>
+<h6>*ngIf:</h6>
+<div *ngIf="currentHero" class="class-name">Diplay Name Here: {{currentHero.name}}</div>
+<div [style.display]="currentHero ? 'block': 'none'">{{currentHero.name}}</div>
+
+<div *ngIf="nullHero" class="something">{{nullHero.name}}</div>
+<div [style.display]="nullHero ? 'block': 'none'">{{nullHero?.name}}</div>

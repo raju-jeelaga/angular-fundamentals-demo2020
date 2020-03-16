@@ -10,6 +10,11 @@ export class DirectivesComponent implements OnInit {
   constructor() { }
   color: string = 'pink';
 
+  currentHero = {
+    name: "Jeelagas",
+  };
+
+  nullHero = null; 
 
   ngOnInit(): void {
   }
