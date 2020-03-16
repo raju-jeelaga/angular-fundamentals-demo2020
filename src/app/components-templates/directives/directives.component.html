@@ -31,3 +31,62 @@
 
 <div *ngIf="nullHero" class="something">{{nullHero.name}}</div>
 <div [style.display]="nullHero ? 'block': 'none'">{{nullHero?.name}}</div>
+<br>
+<h6>*ngFor:</h6>
+<div>*ngFor with index:</div>
+<ul>
+    <li *ngFor="let hero of heros; let i=index">{{i+1}} - {{hero.name}}</li>
+</ul>
+<div>*ngFor without trackBy:</div>
+<ul>
+    <li *ngFor="let hero of heros">
+        {{hero.id}} {{hero.name}}
+    </li>
+</ul>
+<div>*ngFor with trackBy:</div>
+<ul>
+    <li *ngFor="let hero of heros; trackBy: trackByHeros">
+        {{hero.id}} {{hero.name}}
+    </li>
+</ul>
+
+<br/>
+<button class="btn btn-primary" (click)="updateWithDifferentNames()">Update the Names</button>
+<button class="btn btn-primary" (click)="updateWithDifferentIds()">Update the IDs</button>
+
+<br/>
+<br>
+<h6>ng container</h6>
+
+
+<p>
+    I turned the corner
+    <ng-container *ngIf="currentHero">
+        and saw {{currentHero.name}}. I waved
+    </ng-container>
+    and continued on my way.
+</p>
+<br/><br/>
+
+<h6>ng container with span</h6>
+<select [(ngModel)]="currentHero">
+    <option value="">select one</option>
+    <span *ngFor="let h of heros">
+        <span *ngIf="h.power > 6300">
+            <option [ngValue]="h">{{h.name}}</option>
+        </span>
+    </span>
+</select>
+<br/><br/>
+<h6>ng container with ng</h6>
+<select [(ngModel)]="currentHero">
+    <option value="">Select one</option>
+    <ng-container *ngFor="let h of heros">
+       <ng-container *ngIf="h.power > 100">
+         <option [ngValue]="h">{{h.name}}</option>
+       </ng-container>
+    </ng-container>
+
+</select>
+
+
