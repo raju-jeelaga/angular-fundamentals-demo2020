@@ -14,11 +14,14 @@ import { DirectivesComponent } from './directives/directives.component';
 import { HighlightV1Directive } from './attribute-directives/highlight-v1.directive';
 import { HighlightV2Directive } from './attribute-directives/highlight-v2.directive';
 import { HighlightV3Directive } from './attribute-directives/highlight-v3.directive';
+import { InteractionComponent } from './interaction/interaction.component';
+import { CountdownParentWithTempRefVarComponent } from './countdown-parent-with-temp-ref-var/countdown-parent-with-temp-ref-var.component';
+import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 
 
 
 @NgModule({
-  declarations: [DisplayDataInTemplateComponent, DisplayDataInTemplateUrlComponent, TemplateSyntaxComponent, HeroDetailsComponent, CustomEventsComponent, DisplayHeroComponent, HeroBioComponent, TwoWayBindingComponent, HighlightDirective, DirectivesComponent, HighlightV1Directive, HighlightV2Directive, HighlightV3Directive],
+  declarations: [DisplayDataInTemplateComponent, DisplayDataInTemplateUrlComponent, TemplateSyntaxComponent, HeroDetailsComponent, CustomEventsComponent, DisplayHeroComponent, HeroBioComponent, TwoWayBindingComponent, HighlightDirective, DirectivesComponent, HighlightV1Directive, HighlightV2Directive, HighlightV3Directive, InteractionComponent, CountdownParentWithTempRefVarComponent, CountdownTimerComponent],
   imports: [
     CommonModule,
     FormsModule
