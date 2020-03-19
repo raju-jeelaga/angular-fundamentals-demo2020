@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InteractionComponent implements OnInit {
 
+  currentHero = {
+    name: "John"
+  };
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

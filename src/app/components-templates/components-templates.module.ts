@@ -17,11 +17,13 @@ import { HighlightV3Directive } from './attribute-directives/highlight-v3.direct
 import { InteractionComponent } from './interaction/interaction.component';
 import { CountdownParentWithTempRefVarComponent } from './countdown-parent-with-temp-ref-var/countdown-parent-with-temp-ref-var.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
+import { SimpleTodoComponent } from './simple-todo/simple-todo.component';
+import { TodoDetailComponent } from './todo-detail/todo-detail.component';
 
 
 
 @NgModule({
-  declarations: [DisplayDataInTemplateComponent, DisplayDataInTemplateUrlComponent, TemplateSyntaxComponent, HeroDetailsComponent, CustomEventsComponent, DisplayHeroComponent, HeroBioComponent, TwoWayBindingComponent, HighlightDirective, DirectivesComponent, HighlightV1Directive, HighlightV2Directive, HighlightV3Directive, InteractionComponent, CountdownParentWithTempRefVarComponent, CountdownTimerComponent],
+  declarations: [DisplayDataInTemplateComponent, DisplayDataInTemplateUrlComponent, TemplateSyntaxComponent, HeroDetailsComponent, CustomEventsComponent, DisplayHeroComponent, HeroBioComponent, TwoWayBindingComponent, HighlightDirective, DirectivesComponent, HighlightV1Directive, HighlightV2Directive, HighlightV3Directive, InteractionComponent, CountdownParentWithTempRefVarComponent, CountdownTimerComponent, SimpleTodoComponent, TodoDetailComponent],
   imports: [
     CommonModule,
     FormsModule
