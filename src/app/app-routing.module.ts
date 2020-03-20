@@ -8,7 +8,7 @@ import { CustomEventsComponent } from './components-templates/custom-events/cust
 import { TwoWayBindingComponent } from './components-templates/two-way-binding/two-way-binding.component';
 import { DirectivesComponent } from './components-templates/directives/directives.component';
 import { InteractionComponent } from './components-templates/interaction/interaction.component';
-
+import { ViaSerComponent } from './components-templates/via-ser/via-ser.component';
 const routes: Routes = [
   { path:'index', component:IndexComponent },
   { path: 'components-templates/display-data-in-template', component:DisplayDataInTemplateComponent },
@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: 'components-templates/template-syntax/two-way-binding', component:TwoWayBindingComponent },
   { path: 'components-templates/directives', component:DirectivesComponent},
   { path: 'components-templates/component-interaction', component:InteractionComponent},
+  { path: 'components-templates/via-ser', component:ViaSerComponent},
   { path: '', redirectTo: 'index', pathMatch:'full'}
 ];
 

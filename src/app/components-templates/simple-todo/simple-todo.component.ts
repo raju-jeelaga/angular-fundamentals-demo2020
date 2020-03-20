@@ -11,22 +11,23 @@ import { TodoTrackerService } from './todo-tracker.service';
 })
 export class SimpleTodoComponent implements OnInit {
 
-  userActions = [];
+     userActions = [];
 
-  constructor(public tracker: TodoTrackerService) {}
+     constructor( public tracker: TodoTrackerService) {}
 
-  ngOnInit() {
-    this.tracker.todoObservable$.subscribe(todoAction => {
-      this.userActions.push(todoAction);
-    });
-  }
+     ngOnInit() {
+       this.tracker.todoObservable$.subscribe(todoAction => {
+         this.userActions.push(todoAction);
+       });
+     }
 
-  todos = [
-    {id: 1, title: 'Pay power bill', done: false},
-    {id: 2, title: 'Pay phone bill', done: false},
-    {id: 3, title: 'Talk to call center', done: false},
-    {id: 4, title: 'Attend meeting', done: true},
-    {id: 5, title: 'Deposit money', done: true}
-  ];
+     todos = [
+       {id:1, title: 'Raju bill', done: false},
+       {id:2, title: 'Jeelaga', done: true},
+       {id:3, title: 'Kumar', done: false},
+       {id:4, title: 'Anil', done: true},
+       {id:5, title: 'Rithvik', done: false},
+       {id:6, title: 'Jeelaga', done: true},
+     ];
 
 }

@@ -19,11 +19,13 @@ import { CountdownParentWithTempRefVarComponent } from './countdown-parent-with-
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 import { SimpleTodoComponent } from './simple-todo/simple-todo.component';
 import { TodoDetailComponent } from './todo-detail/todo-detail.component';
+import { ViaSerComponent } from './via-ser/via-ser.component';
+import { ViaTodoComponent } from './via-todo/via-todo.component';
 
 
 
 @NgModule({
-  declarations: [DisplayDataInTemplateComponent, DisplayDataInTemplateUrlComponent, TemplateSyntaxComponent, HeroDetailsComponent, CustomEventsComponent, DisplayHeroComponent, HeroBioComponent, TwoWayBindingComponent, HighlightDirective, DirectivesComponent, HighlightV1Directive, HighlightV2Directive, HighlightV3Directive, InteractionComponent, CountdownParentWithTempRefVarComponent, CountdownTimerComponent, SimpleTodoComponent, TodoDetailComponent],
+  declarations: [DisplayDataInTemplateComponent, DisplayDataInTemplateUrlComponent, TemplateSyntaxComponent, HeroDetailsComponent, CustomEventsComponent, DisplayHeroComponent, HeroBioComponent, TwoWayBindingComponent, HighlightDirective, DirectivesComponent, HighlightV1Directive, HighlightV2Directive, HighlightV3Directive, InteractionComponent, CountdownParentWithTempRefVarComponent, CountdownTimerComponent, SimpleTodoComponent, TodoDetailComponent, ViaSerComponent, ViaTodoComponent],
   imports: [
     CommonModule,
     FormsModule
