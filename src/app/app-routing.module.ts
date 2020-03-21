@@ -9,6 +9,8 @@ import { TwoWayBindingComponent } from './components-templates/two-way-binding/t
 import { DirectivesComponent } from './components-templates/directives/directives.component';
 import { InteractionComponent } from './components-templates/interaction/interaction.component';
 import { ViaSerComponent } from './components-templates/via-ser/via-ser.component';
+import { PipesComponent } from './components-templates/pipes/pipes/pipes.component';
+
 const routes: Routes = [
   { path:'index', component:IndexComponent },
   { path: 'components-templates/display-data-in-template', component:DisplayDataInTemplateComponent },
@@ -19,6 +21,7 @@ const routes: Routes = [
   { path: 'components-templates/directives', component:DirectivesComponent},
   { path: 'components-templates/component-interaction', component:InteractionComponent},
   { path: 'components-templates/via-ser', component:ViaSerComponent},
+  { path: 'components-templates/pipes', component:PipesComponent},
   { path: '', redirectTo: 'index', pathMatch:'full'}
 ];
 

@@ -21,11 +21,16 @@ import { SimpleTodoComponent } from './simple-todo/simple-todo.component';
 import { TodoDetailComponent } from './todo-detail/todo-detail.component';
 import { ViaSerComponent } from './via-ser/via-ser.component';
 import { ViaTodoComponent } from './via-todo/via-todo.component';
+import { PipesComponent } from './pipes/pipes/pipes.component';
+import { ExponentialStrengthPipe } from './pipes/exponential-strength.pipe';
+import { FormatNamePipe } from './pipes/format-name.pipe';
+import { FlyingHerosPurePipe } from './pipes/flying-heros-pure.pipe';
+import { FlyingHerosImpurePipe } from './pipes/flying-heros-impure.pipe';
 
 
 
 @NgModule({
-  declarations: [DisplayDataInTemplateComponent, DisplayDataInTemplateUrlComponent, TemplateSyntaxComponent, HeroDetailsComponent, CustomEventsComponent, DisplayHeroComponent, HeroBioComponent, TwoWayBindingComponent, HighlightDirective, DirectivesComponent, HighlightV1Directive, HighlightV2Directive, HighlightV3Directive, InteractionComponent, CountdownParentWithTempRefVarComponent, CountdownTimerComponent, SimpleTodoComponent, TodoDetailComponent, ViaSerComponent, ViaTodoComponent],
+  declarations: [DisplayDataInTemplateComponent, DisplayDataInTemplateUrlComponent, TemplateSyntaxComponent, HeroDetailsComponent, CustomEventsComponent, DisplayHeroComponent, HeroBioComponent, TwoWayBindingComponent, HighlightDirective, DirectivesComponent, HighlightV1Directive, HighlightV2Directive, HighlightV3Directive, InteractionComponent, CountdownParentWithTempRefVarComponent, CountdownTimerComponent, SimpleTodoComponent, TodoDetailComponent, ViaSerComponent, ViaTodoComponent, PipesComponent, ExponentialStrengthPipe, FormatNamePipe, FlyingHerosPurePipe, FlyingHerosImpurePipe],
   imports: [
     CommonModule,
     FormsModule
