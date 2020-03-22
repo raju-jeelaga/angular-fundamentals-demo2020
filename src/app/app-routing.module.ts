@@ -11,6 +11,7 @@ import { InteractionComponent } from './components-templates/interaction/interac
 import { ViaSerComponent } from './components-templates/via-ser/via-ser.component';
 import { PipesComponent } from './components-templates/pipes/pipes/pipes.component';
 import { ObservablesDemoComponent } from './rx-demo/observables-demo/observables-demo.component';
+import { SubjectDemoComponent } from './rx-demo/subject-demo/subject-demo.component';
 
 const routes: Routes = [
   { path:'index', component:IndexComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'components-templates/via-ser', component:ViaSerComponent},
   { path: 'components-templates/pipes', component:PipesComponent},
   { path: 'rxjs/observables-demo', component:ObservablesDemoComponent},
+  { path: 'rxjs/subject-demo', component:SubjectDemoComponent},
   { path: '', redirectTo: 'index', pathMatch:'full'}
 ];
 
