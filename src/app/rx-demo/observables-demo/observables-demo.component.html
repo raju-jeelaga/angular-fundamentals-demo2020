@@ -1,0 +1,57 @@
+<h6>Observable Creation</h6>
+<br>
+<h6>fromEvent</h6>
+
+<div id="my-test"></div>
+<ul class="exy">
+    <li *ngFor="let exy of fromEventLogs">{{ exy }}</li>
+</ul>
+
+<br/>
+<h6>Ajax</h6>
+<ul class="exy">
+    <li *ngFor="let exy of ajaxLogs">{{exy}}</li>
+</ul>
+<br/>
+
+<h6>interval</h6>
+<ul class="logs">
+    <li *ngFor="let log of intervalLogs">{{ log }}</li>
+</ul>
+
+<br/>
+<h6>from array</h6>
+<ul class="logs">
+    <li *ngFor="let log of fromLogs">{{ log }}</li>
+</ul>
+
+<br/>
+
+<h6>of method</h6>
+<ul class="logs">
+    <li *ngFor="let log of ofLogs">{{ log }}</li>
+</ul>
+
+<br/>
+<h6>Observable.create</h6>
+<ul class="logs">
+    <li *ngFor="let log of customObservableLogs">{{ log }}</li>
+</ul>
+
+<br/>
+<h6>Observable.By Keyword</h6>
+<ul class="logs">
+    <li *ngFor="let log of customObservable2Logs">{{ log }}</li>
+</ul>
+
+<br/>
+<h6>Observable.By Error</h6>
+<ul class="logs">
+    <li *ngFor="let log of customObservable3Logs">{{ log }}</li>
+</ul>
+
+<br/>
+<h6>Observable.By Cuatom Array</h6>
+<ul class="logs">
+    <li *ngFor="let log of arrayCustomObservableLogs">{{ log }}</li>
+</ul>

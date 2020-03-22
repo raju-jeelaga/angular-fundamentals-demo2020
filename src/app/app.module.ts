@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { ComponentsTemplatesModule } from './components-templates/components-templates.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
+import { RxDemoModule } from './rx-demo/rx-demo.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { IndexComponent } from './index/index.component';
     ComponentsTemplatesModule,
     NgbModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RxDemoModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

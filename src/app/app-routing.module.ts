@@ -10,6 +10,7 @@ import { DirectivesComponent } from './components-templates/directives/directive
 import { InteractionComponent } from './components-templates/interaction/interaction.component';
 import { ViaSerComponent } from './components-templates/via-ser/via-ser.component';
 import { PipesComponent } from './components-templates/pipes/pipes/pipes.component';
+import { ObservablesDemoComponent } from './rx-demo/observables-demo/observables-demo.component';
 
 const routes: Routes = [
   { path:'index', component:IndexComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'components-templates/component-interaction', component:InteractionComponent},
   { path: 'components-templates/via-ser', component:ViaSerComponent},
   { path: 'components-templates/pipes', component:PipesComponent},
+  { path: 'rxjs/observables-demo', component:ObservablesDemoComponent},
   { path: '', redirectTo: 'index', pathMatch:'full'}
 ];
 
