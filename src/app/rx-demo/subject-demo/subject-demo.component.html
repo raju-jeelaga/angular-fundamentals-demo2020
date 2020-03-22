@@ -7,3 +7,26 @@
 <app-color-input></app-color-input>
 
 <br>
+<h6>Subjects works with only one execution context(Singleton) and Multicast the values</h6>
+<div>numbersObservable$ logs</div>
+<ul class="logs">
+    <li *ngFor="let log of observableLogs">{{ log }}</li>
+</ul>
+<br/>
+<div>numbersSubject logs</div>
+<ul class="logs">
+    <li *ngFor="let log of subjectLogs">{{ log }}</li>
+</ul>
+
+<br>
+<h6>Different types of Subjects</h6>
+<div>Regular Subject logs</div>
+<ul class="logs">
+    <li *ngFor="let log of regularSubjectLogs">{{ log }}</li>
+</ul>
+
+<br/>
+<div>Behaviour Subject logs</div>
+<ul class="logs">
+    <li *ngFor="let log of behaviorSubjectLogs">{{ log }}</li>
+</ul>
