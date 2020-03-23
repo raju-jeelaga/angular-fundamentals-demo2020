@@ -1,1 +1,49 @@
-<p>different-operators works!</p>
+<h6><b>1. map</b></h6>
+<ul class="logs">
+  <li *ngFor="let log of numbersMappedLogs">{{ log }}</li>
+</ul>
+
+<br>
+<h6><b>2. filter</b></h6>
+<ul class="logs">
+  <li *ngFor="let log of numberFilterLogs">{{ log }}</li>
+</ul>
+
+<br>
+<h6><b>3. Combine Latest</b></h6>
+<ul class="logs">
+  <li *ngFor="let log of combineFilterLogs">{{ log }}</li>
+</ul>
+
+<br>
+<h6><b>4. Merge</b></h6>
+<ul class="logs">
+  <li *ngFor="let log of mergedNumberLogs">{{ log }}</li>
+</ul>
+
+<br>
+<h6><b>5. Concat</b></h6>
+<ul class="logs">
+  <li *ngFor="let log of conactNumsLogs">{{ log }}</li>
+</ul>
+<br>
+<h6><b>6. Start With</b></h6>
+<ul class="logs">
+  <li *ngFor="let log of startedWithLogs">{{ log }}</li>
+</ul>
+<br/>
+<h6><b>7. With Latest Forms</b></h6>
+<ul class="logs">
+  <li *ngFor="let log of withLatsFromsLogs">{{ log }}</li>
+</ul>
+<br/>
+<h6><b>8. Zip Logs</b></h6>
+<ul class="logs">
+  <li *ngFor="let log of zipLogs">{{ log }}</li>
+</ul>
+<br>
+<h6><b>9. debounceTime</b></h6>
+<input type="text" value="" id="name" />
+<ul class="logs">
+  <li *ngFor="let log of debounceTimeLogs">{{ log }}</li>
+</ul>
