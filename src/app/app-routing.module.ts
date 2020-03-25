@@ -18,6 +18,9 @@ import { OperatorsDemoComponent } from './rx-demo/operators-demo/operators-demo.
 import { DifferentOperatorsComponent } from './rx-demo/different-operators/different-operators.component';
 
 import { LazyLoadingDemoComponent } from './modules-demo/lazy-loading-demo/lazy-loading-demo.component';
+import { EagerVsLazyLoadingComponent } from './modules-demo/eager-vs-lazy-loading/eager-vs-lazy-loading.component';
+import { CounterHomeComponent as CounterOneHomeComponent} from './counter-one/counter-home/counter-home.component';
+import { CounterHomeComponent as CounterTwoHomeComponent} from './counter-two/counter-home/counter-home.component';
 
 const routes: Routes = [
   { path:'index', component:IndexComponent },
@@ -48,6 +51,11 @@ const routes: Routes = [
   /* Angular 8 lazy loading syntax */
   { path: 'customers', loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule)},
   { path: 'orders', loadChildren:() => import('./orders/orders.module').then(m => m.OrdersModule)},
+
+  //Eager-vs-lazy loading
+  { path: 'ngmodules/eager-vs-lazy-loading', component: EagerVsLazyLoadingComponent},
+  { path: 'ngmodules/eager-vs-lazy-loading/counter-one-home', component: CounterOneHomeComponent },
+  { path: 'ngmodules/eager-vs-lazy-loading/counter-two-home', component: CounterTwoHomeComponent },
 
   { path: '', redirectTo: 'index', pathMatch:'full'}
   

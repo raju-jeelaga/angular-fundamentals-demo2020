@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { RxDemoModule } from './rx-demo/rx-demo.module';
 import { ModulesDemoModule } from './modules-demo/modules-demo.module';
+import { CounterOneModule } from './counter-one/counter-one.module';
+import { CounterTwoModule } from './counter-two/counter-two.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ModulesDemoModule } from './modules-demo/modules-demo.module';
     FormsModule,
     HttpClientModule,
     RxDemoModule,
-    ModulesDemoModule
+    ModulesDemoModule,
+    CounterOneModule,
+    CounterTwoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
