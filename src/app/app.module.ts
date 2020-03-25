@@ -26,7 +26,7 @@ import { CounterTwoModule } from './counter-two/counter-two.module';
     HttpClientModule,
     RxDemoModule,
     ModulesDemoModule,
-    CounterOneModule,
+    CounterOneModule.forRoot(),
     CounterTwoModule
   ],
   providers: [],
