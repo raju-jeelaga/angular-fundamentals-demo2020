@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
@@ -16,7 +16,16 @@ import { IncreaseCountComponent } from './increase-count/increase-count.componen
     CommonModule,
     RouterModule
   ],
-  exports: [DisplayCountComponent, IncreaseCountComponent],
-  providers:[CountingServiceService]
+  exports: [DisplayCountComponent, IncreaseCountComponent]
 })
-export class CounterOneModule { }
+export class CounterOneModule { 
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: CounterOneModule,
+      providers: [CountingServiceService]
+    }
+  }
+
+}
+
+

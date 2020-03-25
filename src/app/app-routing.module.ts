@@ -56,6 +56,7 @@ const routes: Routes = [
   { path: 'ngmodules/eager-vs-lazy-loading', component: EagerVsLazyLoadingComponent},
   { path: 'ngmodules/eager-vs-lazy-loading/counter-one-home', component: CounterOneHomeComponent },
   { path: 'ngmodules/eager-vs-lazy-loading/counter-two-home', component: CounterTwoHomeComponent },
+  { path: 'lazy-counter-home', loadChildren:() => import('./counter-lazy/counter-lazy.module').then(m =>m.CounterLazyModule) },
 
   { path: '', redirectTo: 'index', pathMatch:'full'}
   
