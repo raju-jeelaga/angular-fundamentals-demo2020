@@ -39,13 +39,18 @@ const routes: Routes = [
   { path: 'rxjs/operators-demo', component:OperatorsDemoComponent},
   { path: 'rxjs/different-operators', component:DifferentOperatorsComponent},
   
-  /* lazy loading component */
+  /* ngModels lazy loading component */
   { path: 'ngmodules/lazy-loading', component:LazyLoadingDemoComponent},
 
   /* Lazy loading demo routes */
-  { path: 'customers', loadChildren: './customers/customers.module#CustomersModule' },
+  //{ path: 'customers', loadChildren: './customers/customers.module#CustomersModule' },
+
+  /* Angular 8 lazy loading syntax */
+  { path: 'customers', loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule)},
+  { path: 'orders', loadChildren:() => import('./orders/orders.module').then(m => m.OrdersModule)},
 
   { path: '', redirectTo: 'index', pathMatch:'full'}
+  
 ];
 
 @NgModule({
