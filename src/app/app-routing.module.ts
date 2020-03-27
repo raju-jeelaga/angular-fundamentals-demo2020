@@ -22,6 +22,7 @@ import { EagerVsLazyLoadingComponent } from './modules-demo/eager-vs-lazy-loadin
 import { CounterHomeComponent as CounterOneHomeComponent} from './counter-one/counter-home/counter-home.component';
 import { CounterHomeComponent as CounterTwoHomeComponent} from './counter-two/counter-home/counter-home.component';
 
+import { FormControlComponent } from './forms-demo/reactive/form-control/form-control.component';
 const routes: Routes = [
   { path:'index', component:IndexComponent },
 
@@ -57,6 +58,10 @@ const routes: Routes = [
   { path: 'ngmodules/eager-vs-lazy-loading/counter-one-home', component: CounterOneHomeComponent },
   { path: 'ngmodules/eager-vs-lazy-loading/counter-two-home', component: CounterTwoHomeComponent },
   { path: 'lazy-counter-home', loadChildren:() => import('./counter-lazy/counter-lazy.module').then(m =>m.CounterLazyModule) },
+
+  //Froms Controllers
+   { path: 'forms/reactive/form-control', component:FormControlComponent},
+
 
   { path: '', redirectTo: 'index', pathMatch:'full'}
   

@@ -1,0 +1,18 @@
+<label>
+      Name:
+      <input type=text [formControl]="name"><br/><br/>
+      <button class="btn btn-primary" (click)="readCurrentName()">Read Current Name</button> &nbsp;&nbsp;
+      <button class="btn btn-primary" (click)="updateCurrentName()">Update Name</button>&nbsp;&nbsp;
+</label>
+
+<br><br>
+
+<p>Staus: {{name.status}}</p>
+<p>Validity: {{name.valid}}</p>
+<p>Invalid: {{name.invalid}}</p>
+<p>Pristine: {{name.pristine}}</p>
+<p>Dirty: {{name.dirty}}</p>
+<p>Touched: {{name.touched}}</p>
+<p>Untouched: {{name.untouched}}</p>
+
+<p>Value: {{name.value}}</p>
