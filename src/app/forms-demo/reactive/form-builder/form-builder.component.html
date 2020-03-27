@@ -1,0 +1,28 @@
+<form [formGroup]="profileBuilderGroup" (ngSubmit)="onSubmit()">
+    <label>First Name:
+        <input type="text" formControlName="firstName">
+    </label><br/><br/>
+    <label>Last Name:
+        <input type="text" formControlName="lastName">
+    </label><br/><br/>
+    <div formGroupName="address">
+        <label>State:
+            <input type="text" formControlName="state">
+        </label><br/><br/>
+        <label>City
+            <input type="text" formControlName="city">
+        </label><br/><br/>
+        <label>Street:
+            <input type="text" formControlName="street">
+        </label><br/><br/>
+        <label>
+            <input type="number" formControlName="zip">
+        </label><br/><br/>
+    </div>
+
+    <button type="submit" [disabled]="!profileBuilderGroup.value">Submit</button><br/><br/>
+    <button type="submit" (click)="updatePatchValues()">Update Patch Values</button><br/><br/>
+    <button type="submit" (click)="updateAllValues()">Update ALL Values</button>
+</form>
+
+<pre>{{profileBuilderGroup.value | json}}</pre>

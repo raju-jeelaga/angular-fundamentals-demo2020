@@ -23,6 +23,12 @@ import { CounterHomeComponent as CounterOneHomeComponent} from './counter-one/co
 import { CounterHomeComponent as CounterTwoHomeComponent} from './counter-two/counter-home/counter-home.component';
 
 import { FormControlComponent } from './forms-demo/reactive/form-control/form-control.component';
+import { FormGroupComponent } from './forms-demo/reactive/form-group/form-group.component';
+import { NestedFormGroupComponent } from './forms-demo/reactive/nested-form-group/nested-form-group.component';
+import { FormBuilderComponent } from './forms-demo/reactive/form-builder/form-builder.component';
+import { FormArrayComponent } from './forms-demo/reactive/form-array/form-array.component';
+
+
 const routes: Routes = [
   { path:'index', component:IndexComponent },
 
@@ -61,6 +67,10 @@ const routes: Routes = [
 
   //Froms Controllers
    { path: 'forms/reactive/form-control', component:FormControlComponent},
+   { path: 'forms/reactive/form-group', component:FormGroupComponent},
+   { path: 'forms/reactive/nested-form-group', component:NestedFormGroupComponent},
+   { path: 'forms/reactive/form-builder', component:FormBuilderComponent},
+   { path: 'forms/reactive/form-array', component:FormArrayComponent},
 
 
   { path: '', redirectTo: 'index', pathMatch:'full'}
