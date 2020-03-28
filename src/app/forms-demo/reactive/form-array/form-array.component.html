@@ -1,1 +1,35 @@
-<p>form-array works!</p>
+<form [formGroup]="profileBuilderCheck" (ngSubmit)="onSubmit()">
+    <label>First Name:
+      <input type="text" formControlName="firstName">
+    </label><br/><br/>
+    <label>Last Name:
+        <input type="text" formControlName="lastName">
+    </label><br/><br/>
+    <div formGroupName="address">
+        <label>City:
+            <input type="text" formControlName="city">
+          </label><br/><br/>
+          <label>Village:
+              <input type="text" formControlName="village">
+          </label><br/><br/>
+          <label>Pin:
+            <input type="number" formControlName="pin">
+        </label><br/><br/>
+    </div>
+
+    <div formArrayName="aliases">
+        <h3>Aliases</h3><button (click)="addAlias()">Add Aliases</button><br/><br/>
+        <div *ngFor="let control of aliases.controls; let i=index">
+            <label>
+                Alias:
+                <input type="text" [formControlName]="i">
+              </label>
+        </div>
+    </div>
+
+    
+
+    <button [disabled]="!profileBuilderCheck.value">Submit</button><br/><br/>
+    <button (click)="updatePatchValues()">Patch values Update</button><br/><br/>
+    <button (click)="updateSetvalues()">Full Vlaues Update</button>
+</form>
