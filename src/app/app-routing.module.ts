@@ -27,7 +27,7 @@ import { FormGroupComponent } from './forms-demo/reactive/form-group/form-group.
 import { NestedFormGroupComponent } from './forms-demo/reactive/nested-form-group/nested-form-group.component';
 import { FormBuilderComponent } from './forms-demo/reactive/form-builder/form-builder.component';
 import { FormArrayComponent } from './forms-demo/reactive/form-array/form-array.component';
-
+import { ReactiveFormValidationComponent } from './forms-demo/reactive/reactive-form-validation/reactive-form-validation.component';
 
 const routes: Routes = [
   { path:'index', component:IndexComponent },
@@ -66,12 +66,12 @@ const routes: Routes = [
   { path: 'lazy-counter-home', loadChildren:() => import('./counter-lazy/counter-lazy.module').then(m =>m.CounterLazyModule) },
 
   //Froms Controllers
-   { path: 'forms/reactive/form-control', component:FormControlComponent},
-   { path: 'forms/reactive/form-group', component:FormGroupComponent},
-   { path: 'forms/reactive/nested-form-group', component:NestedFormGroupComponent},
-   { path: 'forms/reactive/form-builder', component:FormBuilderComponent},
-   { path: 'forms/reactive/form-array', component:FormArrayComponent},
-
+  { path: 'forms/reactive/form-control', component:FormControlComponent},
+  { path: 'forms/reactive/form-group', component:FormGroupComponent},
+  { path: 'forms/reactive/nested-form-group', component:NestedFormGroupComponent},
+  { path: 'forms/reactive/form-builder', component:FormBuilderComponent},
+  { path: 'forms/reactive/form-array', component:FormArrayComponent},
+  { path: 'forms/validation/reactive', component:ReactiveFormValidationComponent},
 
   { path: '', redirectTo: 'index', pathMatch:'full'}
   
